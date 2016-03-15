@@ -9,7 +9,7 @@ void	main()
   initscr();
   board = subwin(stdscr, 28, 30, 1, 38);
   next = subwin(stdscr , 10 , 22 ,3 , 73);
-  score = subwin(stdscr , 18, 32 ,9 ,3);
+  score = subwin(stdscr , 18, 32 ,9 ,4);
   wborder(board, '|','|','-','-','+','+','+','+');
   wborder(next, '|','|','-','-','+','+','+','+');
   wborder(score, '|','|','-','-','+','+','+','+');
