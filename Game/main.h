@@ -3,4 +3,6 @@
 
 #include "my.h"
 
+void	display_help();
+
 #endif

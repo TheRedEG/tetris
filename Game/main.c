@@ -1,13 +1,5 @@
 #include "main.h"
 
-int	main(int ac, char **av)
-{
-  if (ac == 2)
-    {
-      display_help();
-    }
-}
-
 void	display_help()
 {   
   int	file;
@@ -25,4 +17,14 @@ void	display_help()
 	  printf("%s",buf);
 	}
     }
+}
+
+int	main(int ac, char **av)
+{
+  if (ac == 2)
+    {
+      display_help();
+    }
+    else
+    display();
 }

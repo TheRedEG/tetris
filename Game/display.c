@@ -1,6 +1,6 @@
 #include "display.h"
 
-void	main()
+void	display()
 {
   WINDOW *board;
   WINDOW *next;

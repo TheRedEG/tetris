@@ -1,7 +1,8 @@
 
 CC	=	gcc
 
-SRC	=	display.c
+SRC	=	display.c \
+		main.c
 
 NAME	=	Tetris
 
