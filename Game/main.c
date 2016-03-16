@@ -26,5 +26,5 @@ int	main(int ac, char **av)
       display_help();
     }
     else
-    display();
+    display_main();
 }

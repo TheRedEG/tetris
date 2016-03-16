@@ -3,6 +3,9 @@
 
 #include "my.h"
 
-void	display();
-
+void	display_main();
+void	display_board();
+void	display_next();
+void	display_score();
+  
 #endif
