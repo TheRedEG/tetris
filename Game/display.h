@@ -7,5 +7,6 @@ void	display_main();
 void	display_board();
 void	display_next();
 void	display_score();
+void	display_logo();
   
 #endif
