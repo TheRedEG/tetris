@@ -1,12 +1,18 @@
 
 CC	=	gcc
 
-SRC	=	display.c \
-		main.c
+SRC	=	data/display.c \
+		data/main.c
 
 NAME	=	Tetris
 
 LIB	=	-W -Wall -Wextra 
 
-all:
+all:		$(NAME)
+$(NAME):
 		$(CC) $(LIB) -o $(NAME) $(SRC) -lncurses
+
+fclean:		
+		rm $(NAME)
+
+re:		fclean all

@@ -2,7 +2,6 @@
 
 void	display_main()
 {
-  initscr();
   start_color();
   //
   display_logo();
@@ -10,8 +9,6 @@ void	display_main()
   display_next();
   display_score();
   //
-  getch();
-  endwin();
   //free(board);
   //free(next);
   //free(score);
@@ -41,6 +38,7 @@ void	display_score()
   WINDOW *score;
   mvprintw(13,5,"%s","SCORE :");
   mvprintw(18,5,"%s","LEVEL :");
+  mvprintw(50,1,"%s"," ");
   score = subwin(stdscr , 18, 32 ,9 ,3);
   wborder(score, '|','|','-','-','+','+','+','+');
   wrefresh(score);
