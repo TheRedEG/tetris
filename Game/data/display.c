@@ -3,17 +3,12 @@
 void	display_main()
 {
   start_color();
-  //
   display_logo();
   display_board();
   display_next();
   display_score();
-  //
-  //free(board);
-  //free(next);
-  //free(score);
-  //free(bloc);
 }
+
 
 void	display_board()
 {
@@ -21,8 +16,12 @@ void	display_board()
   board = subwin(stdscr, 28, 30, 1, 38);
   wborder(board, '|','|','-','-','+','+','+','+');
   wrefresh(board);
- 
 }
+
+
+
+void	display_piece();
+
 
 void	display_next()
 {
@@ -32,6 +31,7 @@ void	display_next()
   wborder(next, '|','|','-','-','+','+','+','+');
   wrefresh(next);
 }
+
 
 void	display_score()
 {
@@ -44,18 +44,19 @@ void	display_score()
   wrefresh(score);
 }
 
+
+
 void	display_logo()
 {
   WINDOW *logo;
   logo = subwin(stdscr , 28, 30, 1, 38);
-  init_pair(2, COLOR_YELLOW, COLOR_BLACK);
-  attron(COLOR_PAIR(2));
+  attron(COLOR_PAIR(3));
   mvprintw(2,3,"%s","##### #### ##### ###  ### ####");
   mvprintw(3,3,"%s","  #   #      #   #  #  #  #");
   mvprintw(4,3,"%s","  #   ##     #   ###   #   ##");
   mvprintw(5,3,"%s","  #   #      #   # #   #     #");
   mvprintw(6,3,"%s","  #   ####   #   #  # ### ####");
-  attroff(COLOR_PAIR(2));
+  attroff(COLOR_PAIR(3));
   mvprintw(28, 4, "%s","Tetris Epitech | girole_t");
 }
 
